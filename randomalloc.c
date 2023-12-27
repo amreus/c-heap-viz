@@ -8,7 +8,7 @@
 #include <stdbool.h>
 
 const int MAX_OBJECTS=500;
-const int NUM_INTERATIONS=50000;
+const int NUM_INTERATIONS=1000;
 const int MAX_SIZE=500;
 const int MIN_SIZE=50;
 

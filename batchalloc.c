@@ -4,7 +4,7 @@
 #include <math.h>
 #include <time.h>
 
-const int NUM_ITERATIONS = 500;
+const int NUM_ITERATIONS = 100;
 const int BATCH_SIZE=100;
 const int MAX_SIZE=500;
 const int MIN_SIZE=50;

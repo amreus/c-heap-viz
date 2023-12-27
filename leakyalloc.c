@@ -10,7 +10,7 @@ const int MIN_SIZE=50;
 
 void leaky_function(){
     void *p1 = malloc(MIN_SIZE + (rand() % (MAX_SIZE-MIN_SIZE)));
-    // void *p2 = malloc(MIN_SIZE + (rand() % (MAX_SIZE-MIN_SIZE)));
+    void *p2 = malloc(MIN_SIZE + (rand() % (MAX_SIZE-MIN_SIZE)));
     void *p3 = malloc(MIN_SIZE + (rand() % (MAX_SIZE-MIN_SIZE)));
 
     free(p3);
