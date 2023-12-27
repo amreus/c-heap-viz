@@ -2,6 +2,13 @@
 
 Windows & Linux version of Jacob Sorber's ["Pulling Back the Curtain.."](https://www.youtube.com/watch?v=GIWeQ2I67rk) video.
 
+
+## How
+
+- compile the allocators (type `make`)
+- run any of the allocators: `simple`, `batch`, `random`, `leaky`. This should to create a `allocs.log` file.
+- run the `mapper.rb`
+
 ## Purpose
 
 - I'm curious and enjoy learning and figuring things out.
