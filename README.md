@@ -11,20 +11,19 @@ Windows & Linux version of Jacob Sorber's ["Pulling Back the Curtain.."](https:/
 
 ## Purpose
 
-- I'm curious and enjoy learning and figuring things out.
-- I use any number of computers running either Winows 10 or Debian, and like to use the same source files no matter which I happen to be using that moment.
+- Recreation. I'm just curious and enjoy learning and figuring things out.
 
+The code worked pretty much out of the box on Windows. The code segfaulted when
+compiled on Linux. I found when I removed `fprintf` it worked. So I ended  up
+using the `write(2)` system call for the output, which somewhat surprisingly to
+me worked on both platforms.
 
-The Windows port worked pretty much out of the box. The same code segfaulted on
-Linux. I found when I removed `fprintf` it worked fine. I ended  up using the
-`write(2)` system call for the output, which somewhat surprisingly to me worked
-on both platforms.
-
-Note: the format of my `allocs.log` file is different from Jacob's original.  I output
-the memory address first in order to use command line sorting tools for quick
-inspection of the data.  So you can use `wc` to count lines - proper alloc/free
-pairs should result in an even number of lines. If you see 2 consecutive lines
-with M(alloc), then you can see immediately a `free` was missed.
+Note: the format of my `allocs.log` file is slightly different from Jacob's
+original.  I output the memory address first in order to use command line
+sorting tools for quick inspection of the data.  So you can use `wc` to count
+lines - proper alloc/free pairs should result in an even number of lines. If
+the sorted lines have consecutive Mallocs, then you can see immediately a
+`free` was missed.
 
 ## Setup
 
@@ -45,4 +44,3 @@ with M(alloc), then you can see immediately a `free` was missed.
 ## See also
 
 - https://github.com/davedwards/Heap_C
--
