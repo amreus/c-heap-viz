@@ -25,6 +25,7 @@ with M(alloc), then you can see immediately a `free` was missed.
 
 [WinLibs](https://winlibs.com/) standalone build of GCC and MinGW-w64 for Windows, installed via [Scoop](https://github.com/ScoopInstaller/Scoop)
 
+- dlfcn from here: https://github.com/dlfcn-win32/dlfcn-win32
 - gcc version 13.2.0 (MinGW-W64 x86_64-msvcrt-posix-seh, built by Brecht Sanders)
 - GNU Make 4.4.1 Built for x86_64-w64-mingw32
 
